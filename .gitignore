@@ -1,0 +1,23 @@
+# ---- umbra: build artifacts ------------------------------------------------
+/dist/
+*.exe
+*.dll
+*.so
+*.zip
+
+# ---- C2 runtime state (self-signed certs, logs) ----------------------------
+/c2data/
+*.log
+
+# ---- local session config (holds C2_PASS; copy from the .example) -----------
+/scripts/umbra.env
+
+# ---- local end-to-end test bench -------------------------------------------
+/.e2e/
+
+# ---- vendored Go toolchain + caches (never commit) -------------------------
+/tools/
+
+# ---- OS noise --------------------------------------------------------------
+.DS_Store
+Thumbs.db
